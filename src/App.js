@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Test from './components/Test';
 import About from './components/About';
 import Contact from './components/Contact';
+import Quiz from './pages/quiz';
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={Home} />
-        <Route path="/test" element={Test} />
-        <Route path="/about" element={About} />
-        <Route path="/contact" element={Contact} />
+        <Route exact path="/" element={<Home />} />
+        <Route path="/test" element={<Test />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/quizes" element={<Quiz />}  />
       </Routes>
     </Router>
     </div>
