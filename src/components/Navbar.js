@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className="bg-gray-800 p-2 flex justify-between items-center">
+    <nav className="bg-gray-800 p-2 flex justify-between items-center h-[150px]">
+        <h2 className='text-white font-medium text-lg'>Life in the UK Test Web</h2>
       <Link to="/" className="text-white font-medium text-lg">
         Home
       </Link>
-      <div className="flex">
         <Link to="/test" className="text-white font-medium text-lg mr-4">
           Test
         </Link>
@@ -17,7 +17,6 @@ function Navbar() {
         <Link to="/contact" className="text-white font-medium text-lg">
           Contact Us
         </Link>
-      </div>
     </nav>
   );
 };
