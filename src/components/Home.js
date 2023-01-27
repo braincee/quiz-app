@@ -5,7 +5,7 @@ const Home = () => {
     <div>
         <div>
             <p>
-            Get Ready to pass your Life in the UK test for FREE!
+            Get Ready to pass your Life in the UK test for <span className='text-red-400'>FREE!</span>
             This website is designed to help you PASS the Life in the UK Test easily. 
             We have carefully selected all our questions from the Life in the UK: 
             A Guide for New Residents: 3rd edition Handbook used for the 2023 Life in 
