@@ -15,20 +15,46 @@ function Navbar() {
     <div className='fixed w-full h-[150px] shadow-xl z-[100] bg-gray-800'>
      <div className="flex justify-between items-center w-full h-full p-10">
         <img src={Logo} alt='uk-logo' width='200px'/>
-        <ul className='hidden md:flex'>
-        <Link to="/" className="text-white font-medium text-lg ml-10">
-          Home
-        </Link>
-        <Link to="/test" className="text-white font-medium text-lg ml-10">
-          Test
-        </Link>
-        <Link to="/about" className="text-white font-medium text-lg ml-10">
-          About Us
-        </Link>
-        <Link to="/contact" className="text-white font-medium text-lg ml-10">
-          Contact Us
-        </Link>
-        </ul>
+        <div className='hidden md:flex'>
+              <Link to="/" className="text-white font-medium text-lg ml-10">
+               Home
+             </Link>
+             <div className='group relative'>
+                <Link to="/study" className='text-white font-medium text-lg ml-10'>Study Materials</Link>
+                <ul className='absolute hidden group-hover:block pt-4'>
+                    <li className='rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 w-full h-full'>Chapter 1: The value and Principle of the UK</li>
+                    <li className='rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 w-full h-full'>Chapter 2: What is the UK?</li>
+                    <li className='rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 w-full h-full'>Chapter 3: A Long Illustrious History</li>
+                    <li className='rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 w-full h-full'>Chapter 4: A Modern, Thriving Society</li>
+                    <li className='rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 w-full h-full'>Chapter 5: The UK Government, the Law and your Role</li>
+                </ul>
+             </div>
+             <div className='group relative'>
+              <Link to="/test" className="text-white font-medium text-lg ml-10">
+                Test
+             </Link>
+              <ul className='absolute hidden group-hover:block text-gray-800 pt-4'>
+                <li className='rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 w-full h-full'>Test 1</li>
+                <li className='bg-gray-200 hover:bg-gray-400 py-2 px-4 w-full h-full'>Test 2</li>
+                <li className='bg-gray-200 hover:bg-gray-400 py-2 px-4 w-full h-full'>Test 3</li>
+              </ul>
+             </div>
+             <div className='relaltive group'>
+                <Link to='/exams' className='text-white font-medium text-lg ml-10'>
+                    Exams
+                </Link>
+                  <ul className='absolute hidden group-hover:block text-gray-800 pt-4'>
+                   <li className='rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 w-full h-full'>Exams 1 to 7</li>
+                   <li className='bg-gray-200 hover:bg-gray-400 py-2 px-4 w-full h-full exam-1'>Exams 8 to 16</li>
+                 </ul>
+             </div>
+           <Link to="/about" className="text-white font-medium text-lg ml-10">
+            About Us
+          </Link>
+          <Link to="/contact" className="text-white font-medium text-lg ml-10">
+            Contact Us
+          </Link>
+          </div>
         <div className='md:hidden' onClick={handleNav}>
           <AiOutlineMenu size={25} />
         </div>
