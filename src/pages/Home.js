@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../assets/uk-flag.webp'
+import Logo from '../assets/uk-flag.webp'
 
 function Home() {
   return (

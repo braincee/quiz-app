@@ -32,7 +32,7 @@ function Navbar() {
                 </ul>
              </div>
              <div className='group relative'>
-              <Link to="/test" className="text-white font-medium text-lg ml-10">
+              <Link to="/tests" className="text-white font-medium text-lg ml-10">
                 Test
              </Link>
               <ul className='absolute hidden group-hover:block text-gray-800 pt-4 w-[60vw]'>
