@@ -1,11 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Test from './components/Test';
-import About from './components/About';
-import Contact from './components/Contact';
-import Quiz from './pages/quiz';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Quiz from './pages/Quiz';
 
 function App() {
   return (
@@ -14,10 +13,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/test" element={<Test />} />
+        <Route path="/tests" element={<Quiz />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/quizes" element={<Quiz />}  />
       </Routes>
     </Router>
     </div>

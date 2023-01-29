@@ -7,7 +7,7 @@ const QuizCard = ({ data, questionTotal }) => {
     const [quizStatus, setQuizStatus] = useState('Take the test');
     const [statusIcon, setStatusIcon] = useState(faArrowAltCircleRight);
     const [iconColor, setIconColor] = useState('blue');
-    const { title, status, score } = data;
+    const { id, title, status, score } = data;
 
     useEffect(() => {
         if (status === 'failed') {
@@ -19,11 +19,11 @@ const QuizCard = ({ data, questionTotal }) => {
             setQuizStatus(`${score} / ${questionTotal} correct answers`);
             setIconColor('green')
         }
-    }, [status])
+    }, [status, questionTotal, score])
                 
 
     return (
-        <Link to="/test" className="max-w-[350px]">
+        <Link to={`/tests/${id}`} className="max-w-[350px]">
             <section className="flex flex-col gap-3 border-[1px] p-2 border-[#0066cc]">
                 <div className="flex justify-center">
                     <h4 className="p-2 border-b-[1px] font-bold">{title}</h4>
