@@ -41,20 +41,20 @@ const Exams = () => {
                </div>
            </div>
            <div className='col-span-2 mt-20'>
-          <div className='flex items-center justify-center'>
-            <p className='text-xl text-gray-600 italic'>Support this Project</p>
-          </div>
-          <div className='flex items-center justify-center'>
-                <p className='pt-4 max-w-[50%]'>Lifeintheuktestweb has been created as 
-                a free source to help migrants prepare for the British Citizenship 
-                test. If you like this project and would like to help us maintain it 
-                please donate. <span className='text-blue-600'>Thanks and good luck!</span>
-            </p>
-          </div>
-             <div className='flex items-center justify-center pt-4'>
-               <button className='bg-yellow-400 rounded-full h-10 w-20 font-bold'>Donate</button>
-             </div>
-        </div>
+            <div className='flex items-center justify-center'>
+               <p className='text-xl text-gray-600 italic'>Support this Project</p>
+            </div>
+            <div className='flex items-center justify-center'>
+                  <p className='pt-4 max-w-[50%]'>Lifeintheuktestweb has been created as 
+                  a free source to help migrants prepare for the British Citizenship 
+                  test. If you like this project and would like to help us maintain it 
+                  please donate. <span className='text-blue-600'>Thanks and good luck!</span>
+               </p>
+            </div>
+            <div className='flex items-center justify-center pt-4'>
+            <button className='bg-yellow-400 rounded-full h-10 w-20 font-bold'>Donate</button>
+            </div>
+           </div>
         </div>
     </div>
   )
