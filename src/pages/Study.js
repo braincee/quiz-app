@@ -1,15 +1,11 @@
 import React from 'react'
+import Layout from '../components/Layout';
 
 const Study = () => {
   return (
-    <div>
-        <div className='bg-blue-700 h-[80px]'>
-            <div className='ml-[150px] text-white font-bold text-3xl p-5'>
-              Study Materials
-            </div>
-        </div>
-        <div className='flex justify-around items-center pt-5'>
-          <div className='flex flex-col ml-10 '>
+    <Layout title="Study Materials">
+        <section className="grid grid-cols-10 justify-items-start px-[10%] pt-[10px]">
+          <div className='col-span-7 flex flex-col mt-[20px] pb-[40px] '>
             <p>
             The contents of the study materials used by Life in the UK Test Web are based on the Life 
             in the United Kingdom: <span className='text-blue-600'>A Guide for New Residents: 3rd edition Handbook used to examine individuals</span>
@@ -29,19 +25,23 @@ const Study = () => {
                 <button className='rounded-full text-gray-100 bg-blue-600 w-[200px] h-10 font-extrabold'>Test Your Knowledge</button>
             </div>
          </div>
-            <div className='flex flex-col justify-center items-center'>
+         <aside className='col-span-2 mt-10 col-start-9'>
             <div>
-                <p className='text-xl text-gray-600 italic'>Support this project</p>
+                <p className='text-[13px] font-bold text-[#333333]'>Support this Project</p>
             </div>
-              <div className='flex items-center justify-center'>
-                <p className='pt-4 max-w-[40%]'>Lifeintheuktestweb has been created as 
-                  a free source to help migrants prepare for the British Citizenship 
-                  test. If you like this project and would like to help us maintain it 
-                  please donate. <span className='text-blue-600'>Thanks and good luck!</span></p>
+            <div className="font-bold">
+                    <p className='pt-4'>Lifeintheuktestweb has been created as 
+                    a free source to help migrants prepare for the British Citizenship 
+                    test. If you like this project and would like to help us maintain it 
+                    please donate. <span className='text-blue-600'>Thanks and good luck!</span>
+                </p>
             </div>
+            <div className='flex items-center justify-center pt-4'>
+                <button className='bg-yellow-400 rounded-full h-10 w-20 font-bold'>Donate</button>
             </div>
-        </div>
-    </div>
+          </aside>
+        </section>
+    </Layout>
   );
 }
 
