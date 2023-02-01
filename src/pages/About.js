@@ -1,15 +1,10 @@
 import React from 'react'
+import Layout from '../components/Layout';
 
 const About = () => {
   return (
-    <div>
-      <div className='bg-blue-700 h-[80px]'>
-            <div className='ml-[150px] text-white font-bold text-3xl p-5'>
-              About US
-            </div>
-        </div>
-      <div className='flex pt-5'>
-        <div className='flex flex-col justify-center max-w-[60%] ml-10'>
+    <Layout title="About US">
+        <div className='col-span-7 mt-[10px] pb-[40px]'>
            <p className='pt-5'>
            Lifeintheuktestweb has been created to help you pass the Life in the UK Test. 
            We have the experience of having undertaken and successfully passed the UK citizenship 
@@ -33,23 +28,7 @@ const About = () => {
            so future candidates get a better experience.
            </p>
         </div>
-        <div className='flex justify-center items-center flex-col'>
-          <div>
-            <p className='text-xl text-gray-600 italic'>Support this Project</p>
-          </div>
-          <div className='flex items-center justify-center'>
-                <p className='pt-4 max-w-[50%]'>Lifeintheuktestweb has been created as 
-                a free source to help migrants prepare for the British Citizenship 
-                test. If you like this project and would like to help us maintain it 
-                please donate. <span className='text-blue-600'>Thanks and good luck!</span>
-            </p>
-          </div>
-             <div className='pt-4'>
-               <button className='bg-yellow-400 rounded-full h-10 w-20 font-bold'>Donate</button>
-             </div>
-        </div>
-      </div>
-    </div>
+    </Layout>
   )
 }
 
