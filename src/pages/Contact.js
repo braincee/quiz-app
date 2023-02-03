@@ -1,15 +1,10 @@
 import React from 'react'
+import Layout from '../components/Layout';
 
 function Contact() {
   return (
-    <div>
-       <div className='bg-blue-700 h-[80px]'>
-            <div className='ml-[150px] text-white font-bold text-3xl p-5'>
-              Contact US
-            </div>
-        </div>
-      <div className='flex'>
-        <div className='pt-[70px] ml-20'>
+    <Layout title="Contact US">
+        <div className='col-span-7 mt-[20px] pb-[40px]'>
            <form>
               <div className='mb-4'>
                  <label className='text-xl font-medium'>Your Name (Required)</label>
@@ -43,23 +38,7 @@ function Contact() {
                 </button>
            </form>
         </div>
-        <div className='flex justify-center items-center flex-col'>
-          <div>
-            <p className='text-xl text-gray-600 italic'>Support this Project</p>
-          </div>
-          <div className='flex items-center justify-center'>
-                <p className='pt-4 max-w-[50%]'>Lifeintheuktestweb has been created as 
-                a free source to help migrants prepare for the British Citizenship 
-                test. If you like this project and would like to help us maintain it 
-                please donate. <span className='text-blue-600'>Thanks and good luck!</span>
-            </p>
-          </div>
-             <div className='pt-4'>
-               <button className='bg-yellow-400 rounded-full h-10 w-20 font-bold'>Donate</button>
-             </div>
-        </div>
-      </div>
-    </div>
+    </Layout>
   )
 }
 
